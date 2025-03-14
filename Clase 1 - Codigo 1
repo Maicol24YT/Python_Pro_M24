@@ -1,0 +1,14 @@
+import random
+#Tengo 10 años este es mi codigo y se trata de crear una contraseña aleatoria solo dime y lo hago automaticamente
+
+characters_v = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+
+character_select = int(input("Dime la longitud de la contraseña:   "))
+
+contrasena = ""
+
+for i in range(character_select):
+    contrasena += random.choice(characters_v)
+
+print(f'Tu contraseña es {contrasena}')
